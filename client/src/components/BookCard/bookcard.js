@@ -15,8 +15,8 @@ function BookCard(props) {
                         <h5 className="card-title">{title}</h5>
                         <h6 className="card-title">{author}</h6>
                         <p className="card-text">{description}</p>
-                       <a href={link}> <button>View</button></a>
-                        <button>Delete</button>
+                       <a href={link} target="_blank" rel="noopener noreferrer"><button className="btn btn-success">View</button></a>
+                       <button className="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>

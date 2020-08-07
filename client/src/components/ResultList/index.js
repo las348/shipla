@@ -13,7 +13,7 @@ function ResultList(props) {
                             title={book.volumeInfo.title}
                             author={book.volumeInfo.authors}
                             image={book.volumeInfo.imageLinks.thumbnail}
-                            link={book.volumeInfo.infoLinks}
+                            link={book.volumeInfo.infoLink}
                             description={book.volumeInfo.description}
                         />
                     </li>

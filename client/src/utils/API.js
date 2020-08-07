@@ -6,7 +6,7 @@ const APIKEY = "AIzaSyBAgtwBDEwAMOvRDzX9eONdRc_7IKUqGEI";
 // Export an object with a "search" method that searches the Giphy API for the passed query
 export default {
     search: function (query) {
-        return axios.get(BASEURL + query + "&key=" + APIKEY + "&maxResults=20");
+        return axios.get(BASEURL + query + "&key=" + APIKEY + "&maxResults=5");
     },
     // Gets all books
     getBooks: function () {
