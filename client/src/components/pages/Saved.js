@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from '../Nav/index'
+import Navbar from '../Navbar/index'
 import Jumbotron from '../Jumbotron/index'
 import API from '../../utils/API'
 import ResultCard from "../ResultCard/ResultCard";
@@ -11,7 +11,7 @@ class Saved extends Component {
 
     componentDidMount() {
         API.getBooks()
-            .then(res => {
+            .then(res =>  {
                 this.setState({ results: res.data });
                 console.log('results:', this.state.results)
             })
@@ -25,7 +25,7 @@ class Saved extends Component {
 
         const bookID = event.target.getAttribute('data-id')
 
-        const newState = { ...this.state }
+        const newState = {...this.state}
 
         newState.results = this.state.results.filter(book => book._id !== bookID)
         // Filters out any books with the matching target id

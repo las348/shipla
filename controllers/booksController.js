@@ -5,7 +5,7 @@ module.exports = {
   findAll: function(req, res) {
     db.Book
       .find(req.query)
-      .sort({ date: -1 })
+      .sort({ date: -1 }) // Sorts by recently added first.
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

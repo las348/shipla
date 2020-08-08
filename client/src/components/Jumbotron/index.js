@@ -1,14 +1,16 @@
-import React from "react";
+import React from 'react';
 
 function Jumbotron() {
-  return (
-    <div className="jumbotron jumbotron-fluid" style={{ textAlign: "center" }}>
-      <div className="container">
-        <h2>Google Books Search</h2>
-        <h5 className="lead">Search and Save Books of Interest</h5>
-      </div>
-  </div>
-  );
+    return (
+    <div className='jumbotron jumbotron-fluid bg-secondary text-white'>
+        <span className='display-2'>
+            Google Book Search
+        </span>
+        <span className='lead'>
+            Find and save your favorite books
+        </span>
+    </div>
+    )
 }
 
 export default Jumbotron;
