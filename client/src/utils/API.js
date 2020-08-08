@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=";
-const APIKEY = "AIzaSyBAgtwBDEwAMOvRDzX9eONdRc_7IKUqGEI";
+// const APIKEY = "AIzaSyBAgtwBDEwAMOvRDzX9eONdRc_7IKUqGEI";
 
 // Export an object with a "search" method that searches the Giphy API for the passed query
 export default {
-    search: function (query) {
-        return axios.get(BASEURL + query + "&key=" + APIKEY + "&maxResults=5");
+    getGoogleSearchBooks: function (query) {
+        return axios.get(BASEURL + query);
     },
     // Gets all books
     getBooks: function () {
@@ -21,7 +21,7 @@ export default {
         return axios.delete("/api/books/" + id);
     },
     // Saves a book to the database
-    saveBook: function (bookData) {
-        return axios.post("/api/books", bookData);
+    saveBook: function (savedBooks) {
+        return axios.post("/api/books", savedBooks);
     }
 };
