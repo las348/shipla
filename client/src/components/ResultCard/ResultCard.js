@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../Button/button'
+import Button from '../Button/button';
+import './style.css';
 
 function ResultCard({ title, link, id, author, image, description, saveBook, deleteBook }) {
     if (!saveBook) {
@@ -9,7 +10,7 @@ function ResultCard({ title, link, id, author, image, description, saveBook, del
                     <div className='col-3'>
                         <h4>{title}</h4>
                         <small>
-                            <br />Written By:
+                            Written By:
                         <br />{author}</small>
                     </div>
                     <span className='col-3 offset-6'>
@@ -23,9 +24,6 @@ function ResultCard({ title, link, id, author, image, description, saveBook, del
                         >Delete
                         </Button>
                     </span>
-                </div>
-                <div className='row'>
-                    <hr />
                 </div>
                 <div className='row'>
                     <div className='col-3 text-center'>
@@ -44,8 +42,7 @@ function ResultCard({ title, link, id, author, image, description, saveBook, del
                 <div className='row text-center' id='result-header'>
                     <div className='col-3'>
                         <h4>{title}</h4>
-                        <small>
-                            <br />Written By:
+                        <small>Written By:
                         <br />{author}</small>
                     </div>
                     <span className='col-3 offset-6'>
@@ -59,9 +56,6 @@ function ResultCard({ title, link, id, author, image, description, saveBook, del
                         >Save
                         </Button>
                     </span>
-                </div>
-                <div className='row'>
-                    <hr />
                 </div>
                 <div className='row'>
                     <div className='col-3 text-center'>

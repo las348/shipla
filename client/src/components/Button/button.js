@@ -1,18 +1,20 @@
 import React from 'react';
+import './style.css';
 
 function Button(props) {
     if (props.href) {
         return (
-            <button className='btn btn-outline-dark btn-lg btn-block'>
-                <a href={props.href} target="_blank"
-                    rel="noopener noreferrer">{props.children}</a>
-            </button>
+            <a href={props.href} target="_blank"
+                rel="noopener noreferrer">
+                <button className='btn btn-dark btn-sm'>
+                    {props.children}
+                </button></a>
         )
     }
     else if (props.onClick) {
         return (
             <button
-                className='btn btn-primary btn-lg btn-block'
+                className='btn btn-primary btn-sm'
                 onClick={props.onClick}
                 data-id={props.id}
             >

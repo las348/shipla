@@ -1,20 +1,25 @@
 import React from 'react';
+import './style.css';
 
 function SearchForm(props) {
 
     return (
         <div id='search-form' className='text-center'>
-            <input className='form-control' name='title'
-                placeholder='Search for a book...'
-                type='text'
-                onChange={props.handleInputChange}></input>
-                <br />
-                <button
-                className='btn btn-block btn-primary'
-                    onClick={props.handleFormSubmit}
-                    type='submit'
-                >   Search
+            <div className="row justify-content-center">
+                <div className="col-md-6">
+                    <input className='form-control' name='title'
+                        placeholder='Search for a book...'
+                        type='text'
+                        onChange={props.handleInputChange}></input>
+                    <br />
+                    <button
+                        className='btn btn-block btn-primary'
+                        onClick={props.handleFormSubmit}
+                        type='submit'
+                    >   Search
             </button>
+                </div>
+            </div>
         </div>
     )
 }

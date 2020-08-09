@@ -1,16 +1,16 @@
 import React from 'react';
-// import './style.css';
+import "./style.css";
 
 
 function Jumbotron() {
     return (
-    <div className='jumbotron jumbotron-fluid bg-secondary text-white'>
+    <div className='jumbotron jumbotron-fluid'>
         <span className='display-2'>
             Google Book Search
         </span>
-        <span className='lead'>
+        <p>
             Find and save your favorite books
-        </span>
+        </p>
     </div>
     )
 }

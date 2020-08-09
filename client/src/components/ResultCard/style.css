@@ -1,0 +1,14 @@
+#result-card {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: double black;
+}
+
+#result-header {
+    margin-bottom: 20px;
+}
+
+img {
+    box-shadow: 11px 7px 36px -10px rgba(0,0,0,0.75);
+    border-radius:10px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-// import { BrowserRouter as Router, Link } from "react-router-dom"
+import './style.css';
 
 function Navbar() {
   return (
@@ -11,7 +11,7 @@ function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <a className="nav-link" href="/">Search</a>
             </li>
             <li className="nav-item">

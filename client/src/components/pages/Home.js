@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import Navbar from '../Nav/index'
-import Jumbotron from '../Jumbotron/index'
-import API from '../../utils/API'
+import Navbar from '../Nav/index';
+import Jumbotron from '../Jumbotron/index';
+import API from '../../utils/API';
 import ResultCard from '../ResultCard/ResultCard';
 import SearchForm from '../SearchForm/SearchForm';
+import './home.css';
 
 class Home extends Component {
     state = {
@@ -34,6 +35,7 @@ class Home extends Component {
         event.preventDefault();
         API.getGoogleSearchBooks(this.state.title)
             .then(res => {
+                console.log(res.data.items)
                 this.setState({
                     results: res.data.items
                 })
@@ -106,7 +108,7 @@ class Home extends Component {
                                 id={book.id}
                                 link={book.volumeInfo.infoLink}
                                 author={book.volumeInfo.authors}    
-                                image={book.volumeInfo.imageLinks.thumbnail}
+                                image={book.volumeInfo.imageLinks !==undefined ? book.volumeInfo.imageLinks.thumbnail:"https://via.placeholder.com/150"}
                                 description={book.volumeInfo.description}
                                 saveBook={this.handleSaveBook}
                                 />

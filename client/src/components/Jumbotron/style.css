@@ -1,4 +1,12 @@
 .jumbotron {
-    background-color: mintcream;
-    color: pink;
+    background-image: url("./stack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+span, p {
+    color: black;
 }
