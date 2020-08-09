@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Navbar from '../Navbar/index'
-import Jumbotron from '../Jumbotron/index'
-import API from '../../utils/API'
-import ResultCard from "../ResultCard/ResultCard";
+import Navbar from '../Nav/index';
+import Jumbotron from '../Jumbotron/index';
+import API from '../../utils/API';
+import ResultCard from '../ResultCard/ResultCard';
 
 class Saved extends Component {
     state = {
@@ -49,7 +49,7 @@ class Saved extends Component {
                 <Navbar />
                 <Jumbotron />
                 <div className='container'>
-                    <h3>Your Saved Books</h3>
+                    <h3>Your BookShelf</h3>
                     <div className='container-fluid' id='main-content'>
                         {this.state.results.map((book) => {
                             return (

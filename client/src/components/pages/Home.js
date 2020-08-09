@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Navbar from '../Navbar'
-import Jumbotron from '../Jumbotron'
+import Navbar from '../Nav/index'
+import Jumbotron from '../Jumbotron/index'
 import API from '../../utils/API'
-import ResultCard from "../ResultCard";
-import SearchForm from "../SearchForm";
+import ResultCard from '../ResultCard/ResultCard';
+import SearchForm from '../SearchForm/SearchForm';
 
 class Home extends Component {
     state = {
@@ -101,14 +101,14 @@ class Home extends Component {
                         {this.state.results.map((book) => {
                             return (
                                 <ResultCard
-                                    key={book.id}
-                                    title={book.volumeInfo.title}
-                                    id={book.id}
-                                    link={book.volumeInfo.infoLink}
-                                    author={book.volumeInfo.authors}
-                                    image={book.volumeInfo.imageLinks.thumbnail}
-                                    description={book.volumeInfo.description}
-                                    saveBook={this.handleSaveBook}
+                                key={book.id}
+                                title={book.volumeInfo.title}
+                                id={book.id}
+                                link={book.volumeInfo.infoLink}
+                                author={book.volumeInfo.authors}    
+                                image={book.volumeInfo.imageLinks.thumbnail}
+                                description={book.volumeInfo.description}
+                                saveBook={this.handleSaveBook}
                                 />
                             )
                         })}
