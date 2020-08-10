@@ -5,9 +5,9 @@ import "./style.css";
 function Jumbotron() {
     return (
     <div className='jumbotron jumbotron-fluid'>
-        <span className='display-2'>
+        <h2>
             Google Book Search
-        </span>
+        </h2>
         <p>
             Find and save your favorite books
         </p>

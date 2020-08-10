@@ -1,3 +1,14 @@
 button {
     margin-bottom: 50px;
 }
+
+.btn-link {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.btn-link:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}

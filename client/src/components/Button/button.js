@@ -14,7 +14,7 @@ function Button(props) {
     else if (props.onClick) {
         return (
             <button
-                className='btn btn-primary btn-sm'
+                className='btn btn-link btn-sm'
                 onClick={props.onClick}
                 data-id={props.id}
             >
